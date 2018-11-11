@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/aframe-randomizer-components@^3.0.1/dist/aframe-randomizer-components.min.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.5/dist/aframe-particle-system-component.min.js"></script>
     <script src="/js/spawn-in-circle.component.js"></script>
+    <script src="https://s3.amazonaws.com/magic.lifescope.io/registerMagic.js"></script>
   </head>
   <body>
     <a-scene networked-scene="
@@ -61,7 +62,7 @@
             </a-entity>
           </a-entity>
         </template>
-
+  
         <!-- /Templates -->
       </a-assets>
 
@@ -71,10 +72,15 @@
           random-color
         ></a-sphere>
       </a-entity>
+      
+      
+      
+      <a-entity magic></a-entity>
+      
 
       <a-entity position="0 0 0"
         geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
-        material="src: #grid; repeat: 10000 10000; transparent: true; metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;"></a-entity>
+        material="src: #grid; repeat: 10000 10000; transparent: true; metalness:0.6; roughness: 0.4;  color:#ddf"></a-entity>
 
       <a-entity light="color: #ccccff; intensity: 1; type: ambient;" visible=""></a-entity>
       <a-entity light="color: #ffaaff; intensity: 1.5" position="5 5 5"></a-entity>
