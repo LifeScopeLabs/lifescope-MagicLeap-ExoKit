@@ -1,4 +1,4 @@
-# Networked-Aframe Starter Pack
+# LifeScope Magic Leap ExoKit
 
 Built with [Networked-A-Frame](https://github.com/haydenjameslee/networked-aframe), a web framework for building multi-user virtual reality experiences. Works on Vive, Rift, desktop, mobile platforms.
 
